@@ -1,0 +1,50 @@
+.wrap{
+    position: relative;
+    margin-left: 200px;
+    margin-top: 200px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+.imgWrap{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 400px;/*又是哪个在上面？*/
+    height: 400px;
+}
+
+.amplifierWrap{
+    position: absolute;
+    left: 600px;
+    top:200px;
+    width: 400px;
+    height: 400px;  
+    overflow: hidden;
+}
+.amplifierWrap .img{
+    display: none;
+}
+.amplifierWrap .img.active{
+    display: block;
+    position: absolute;/*又是哪个在上面？*/
+    left: 200px;
+    top: 200px;
+    transform: scale(2); 
+    /*
+  
+   
+    */
+}
+
+
+.move{
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #424242;
+}
+.move.active{
+    display: block;
+}
